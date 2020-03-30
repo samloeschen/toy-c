@@ -9,5 +9,6 @@ Icon
 # Thumbnails
 ._*
 
+# build output
 *.o
 bin/**
