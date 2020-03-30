@@ -10,7 +10,7 @@ Icon
 ._*
 
 # meson
-build/
+build/**
 
 # build output
 *.o
