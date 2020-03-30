@@ -9,6 +9,9 @@ Icon
 # Thumbnails
 ._*
 
+# meson
+build/
+
 # build output
 *.o
 bin/**
