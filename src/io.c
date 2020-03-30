@@ -4,7 +4,6 @@
 
 #include "io.h"
 
-// errors
 int readAll(char *path, char **out) {
     FILE *filePtr = fopen(path, "rb");
 
@@ -12,10 +11,11 @@ int readAll(char *path, char **out) {
 
     fseek(filePtr, 0L, SEEK_END);
     long size = ftell(filePtr);
-    *out = calloc(size + 1, sizeof(char));
+    *out = malloc((size + 1) * sizeof(char));
     fseek(filePtr, 0L, SEEK_SET);
 
     fread(*out, sizeof(char), size, filePtr);
+    (*out)[size] = '\0'; // just to be safe!
     fclose(filePtr);
 
     return 0;
