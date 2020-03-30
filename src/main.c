@@ -10,13 +10,11 @@ const int AA_SAMPLES = 4;
 const int DEFAULT_WINDOW_WIDTH = 1024;
 const int DEFAULT_WINDOW_HEIGHT = 768;
 
-const char* SHADERS_PATH = "";
-
 static const GLfloat vertexBufferData[] = {
-    -0.9f, -0.9f, 0.0f,     0.0f, 0.0f,
-    -0.9f,  0.9f, 0.0f,     0.0f, 1.0f,
-     0.9f,  0.9f, 0.0f,     1.0f, 1.0f,
-     0.9f, -0.9f, 0.0f,     1.0f, 0.0f,
+    -1.0f, -1.0f, 0.0f,     0.0f, 0.0f,
+    -1.0f,  1.0f, 0.0f,     0.0f, 1.0f,
+     1.0f,  1.0f, 0.0f,     1.0f, 1.0f,
+     1.0f, -1.0f, 0.0f,     1.0f, 0.0f,
 };
 static const GLint indexBufferData[] = {
     0, 1, 2,
