@@ -4,6 +4,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#include "sparseSet.h"
 #include "io.h"
 
 const int AA_SAMPLES = 4;
@@ -128,6 +129,11 @@ int main(int argc, char **argv) {
 
     GLuint programId;
     loadProgram("src/shaders/vertexTest.glsl", "src/shaders/fragmentTest.glsl", &programId);
+
+
+    // sparse set test
+    SparseSet setA;
+    makeSparseSet(10, 10, &setA);
 
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
     while (!glfwWindowShouldClose(window)) {

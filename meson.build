@@ -1,7 +1,7 @@
 project('toy-c', 'c')
 
 incdir = include_directories('include')
-sources = ['src/main.c', 'src/io.c']
+sources = ['src/main.c', 'src/io.c', 'src/sparseSet.c']
 
 glfwdep = dependency('glfw3')
 glewdep = dependency('glew')
